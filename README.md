@@ -24,7 +24,7 @@ wha-servidor-web/
 git init
 git add .
 git commit -m "Initial commit - Bot WhatsApp com painel web"
-git remote add origin https://github.com/SEU_USUARIO/wha-servidor-web.git
+git remote add origin https://github.com/ronokedas/servidor-whats-app.git
 git push -u origin main
 ```
 
