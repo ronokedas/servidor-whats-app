@@ -38,28 +38,40 @@ ssh root@SEU_IP_VPS
 
 ```bash
 # Atualizar pacotes
-apt update && apt upgrade -y
+sudo apt update && apt upgrade -y
 
 # Instalar Docker
 curl -fsSL https://get.docker.com | sh
 
 # Instalar Docker Compose
-apt install docker-compose -y
+sudo apt install docker-compose -y
 
 # Iniciar Docker
-systemctl start docker
-systemctl enable docker
+sudo systemctl start docker
+sudo systemctl enable docker
 
 # Verificar instalação
 docker --version
 docker-compose --version
+
+# Remover a versão antiga
+sudo apt remove docker-compose
+
+# Instalar o plugin Docker Compose V2
+sudo apt update
+sudo apt install docker-compose-plugin
+
+# Usar o comando
+docker compose --version
+
+
 ```
 
 ### 4. Clonar o repositório na VPS
 
 ```bash
 # Clonar o projeto
-git clone https://github.com/SEU_USUARIO/wha-servidor-web.git
+git clone https://github.com/ronokedas/wha-servidor-web.git
 cd wha-servidor-web
 ```
 
