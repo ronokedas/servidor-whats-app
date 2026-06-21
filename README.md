@@ -79,8 +79,25 @@ cd servidor-whats-app
 
 ```bash
 # Permitir porta 3001
-ufw allow 3001/tcp
-ufw reload
+# For Debian/Ubuntu-based systems:
+sudo apt update
+sudo apt install ufw -y
+
+# First, allow SSH (IMPORTANT - do this BEFORE enabling UFW)
+sudo ufw allow ssh
+
+# Now enable UFW
+sudo ufw enable
+
+# Allow port 3001
+sudo ufw allow 3001/tcp
+
+# Check the status to verify
+sudo ufw status
+
+
+
+
 ```
 
 ### 6. Iniciar o container
