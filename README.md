@@ -71,7 +71,7 @@ docker compose --version
 
 ```bash
 # Clonar o projeto
-git clone https://github.com/ronokedas/wha-servidor-web.git
+git clone https://github.com/ronokedas/servidor-whats-app.git
 cd wha-servidor-web
 ```
 
