@@ -1,0 +1,17 @@
+{
+  "name": "wha-servidor-web",
+  "version": "2.0.0",
+  "description": "Bot WhatsApp com painel web para VPS",
+  "main": "zap2.js",
+  "scripts": {
+    "start": "node zap2.js"
+  },
+  "dependencies": {
+    "whatsapp-web.js": "^1.23.0",
+    "express": "^4.18.2",
+    "socket.io": "^4.7.2",
+    "qrcode": "^1.5.3",
+    "cors": "^2.8.5",
+    "body-parser": "^1.20.2"
+  }
+}
