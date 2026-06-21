@@ -72,7 +72,7 @@ docker compose --version
 ```bash
 # Clonar o projeto
 git clone https://github.com/ronokedas/servidor-whats-app.git
-cd wha-servidor-web
+cd servidor-whats-app
 ```
 
 ### 5. Liberar a porta no firewall (se usar UFW)
