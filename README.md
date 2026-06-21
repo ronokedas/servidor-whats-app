@@ -104,7 +104,13 @@ sudo ufw status
 
 ```bash
 # Primeira vez - build e start
-docker-compose up -d --build
+sudo docker compose up -d --build
+
+
+sudo usermod -aG docker $USER
+# Faça logout e login novamente ou use:
+newgrp docker
+
 
 # Ver logs em tempo real
 docker-compose logs -f
